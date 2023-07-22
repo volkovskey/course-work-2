@@ -6,7 +6,7 @@ from menu import FillValues, PrintValues
 def f(t, y):
     y1, y2 = y
     dy1_dt = y2
-    dy2_dt = -100 * y1 - 60 * y2
+    dy2_dt = -100 * y1 - 60 * y2 + 300
     return np.array([dy1_dt, dy2_dt])
 
 def runge_kutta_merson(y0, t0, t_end, h_init, epsilon):
